@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 
 import handlebars from "vite-plugin-handlebars";
 import { resolve } from "path";
+import { webfontDownload } from "vite-plugin-webfont-dl";
 
 function handlebarsOverride(options) {
   const plugin = handlebars(options);
@@ -12,9 +13,9 @@ function handlebarsOverride(options) {
 }
 
 export default defineConfig({
-  base: "/Vite3UI/",
+  base: "/qpick/",
   build: {
-    outDir: "Vite3UI"
+    outDir: "qpick",
   },
   plugins: [
     handlebarsOverride({
@@ -24,5 +25,6 @@ export default defineConfig({
       partialDirectory: resolve(__dirname, "./src/partials"),
     }),
     // handlebars({}),
+    webfontDownload(),
   ],
 });
