@@ -1,11 +1,21 @@
 .foot {
-  @apply p-10 bg-accent bg-no-repeat bg-cover text-base-100 flex flex-col gap-8;
+  @apply mt-12 px-4;
 }
-
-.navbar-bot {
-  @apply navbar flex-col md:flex-row gap-6;
+.foot-container {
+  @apply p-8 bg-neutral text-primary flex gap-8 rounded-t-3xl shadow-xl w-full max-w-[1110px] mx-auto;
 }
-
-.nav-link {
-  @apply flex gap-4 items-center hover:scale-125 transition duration-300;
+.logo-link {
+  @apply hover:text-accent;
+}
+.logo, .foot-menu, .socials {
+  @apply w-1/4;
+}
+.foot-langs {
+  @apply flex flex-col gap-4 px-4 items-center w-1/4;
+}
+.socials {
+  @apply flex gap-4 px-4 items-start;
+}
+.socials-link {
+  @apply hover:text-accent;
 }

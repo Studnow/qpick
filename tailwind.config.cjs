@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./index.html", "./src/**/**/*.{html, hbs}", "src/sass/*.sass", "src/css/*.css", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        xmd: '1440px'
+      }
+    },
   },
   daisyui: {
     themes: [
@@ -14,7 +18,7 @@ module.exports = {
           secondary: "#DF6464",
           accent: "#FFA542",
           "accent-content": "#fff",
-          neutral: "#838383",
+          neutral: "#ffffff",
           "base-100": "#EAEAEA",
           "base-200": "#F9F9F9",
           "base-content": "#838383",

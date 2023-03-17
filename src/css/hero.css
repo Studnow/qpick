@@ -1,0 +1,43 @@
+.qpick-hero {
+  /* background-image: url(/assets/img/top/bg/waterfall.webp) */
+  @apply mx-auto mt-12 grid grid-flow-row gap-16 px-4;
+}
+.hero-banner {
+  @apply flex items-center justify-center rounded-3xl bg-primary h-52 w-full max-w-[1110px] mx-auto;
+}
+.banner-text {
+  @apply text-4xl text-primary-content font-medium max-w-sm;
+}
+.banner-img {
+  @apply relative -top-2;
+}
+.divide {
+  @apply w-full h-1 border-2 border-t-base-content border-dashed mt-8;
+}
+.catalog-title {
+  @apply w-full shrink-0 text-xl font-semibold;
+}
+.q-card {
+  @apply card w-64 md:w-80 bg-neutral shadow-xl pt-4;
+}
+.card-info {
+  @apply flex justify-between w-full;
+}
+.card-title {
+  @apply w-44 self-start;
+}
+.prices {
+  @apply flex flex-col items-end justify-end;
+}
+.discount {
+  @apply text-lg font-medium text-secondary;
+}
+.price {
+  @apply font-medium text-accent line-through;
+}
+.no-discount-price {
+  @apply font-medium text-accent text-lg;
+}
+.rating-input {
+  @apply mask mask-star-2 w-8 h-8;
+}
