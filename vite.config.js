@@ -25,6 +25,6 @@ export default defineConfig({
       partialDirectory: [resolve(__dirname, "./src/partials"), resolve(__dirname, "./src/partials/nav"), resolve(__dirname, "./src/partials/content")],
     }),
     // handlebars({}),
-    webfontDownload(),
+    // webfontDownload(),
   ],
 });

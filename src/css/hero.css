@@ -1,5 +1,4 @@
 .qpick-hero {
-  /* background-image: url(/assets/img/top/bg/waterfall.webp) */
   @apply mx-auto mt-12 grid grid-flow-row gap-16 px-4;
 }
 .hero-banner {
