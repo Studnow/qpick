@@ -13,10 +13,10 @@ function handlebarsOverride(options) {
 }
 
 export default defineConfig({
-  // base: "/qpick/", // for deploy to gh-pages base = outDir
-  // build: {
-  //   outDir: "qpick",
-  // },
+  base: "/qpick/", // for deploy to gh-pages base = outDir
+  build: {
+    outDir: "qpick",
+  },
   plugins: [
     handlebarsOverride({
       context: {
