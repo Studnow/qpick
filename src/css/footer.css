@@ -2,7 +2,7 @@
   @apply mt-12 px-4;
 }
 .foot-container {
-  @apply p-8 bg-neutral text-primary flex gap-8 rounded-t-3xl shadow-xl w-full max-w-[1110px] mx-auto;
+  @apply p-8 bg-neutral text-primary flex gap-8 rounded-t-3xl shadow-xl w-full max-w-screen-xmd mx-auto;
 }
 .logo-link {
   @apply hover:text-accent;
@@ -18,4 +18,7 @@
 }
 .socials-link {
   @apply hover:text-accent;
+}
+.footer-link {
+  @apply link link-hover;
 }

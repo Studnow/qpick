@@ -1,8 +1,8 @@
 .qpick-hero {
-  @apply mx-auto mt-12 grid grid-flow-row gap-16 px-4;
+  @apply mx-auto grid grid-flow-row gap-16 px-4;
 }
 .hero-banner {
-  @apply flex items-center justify-center rounded-3xl bg-primary h-52 w-full max-w-[1110px] mx-auto;
+  @apply flex items-center justify-center rounded-3xl bg-primary h-52 w-full max-w-screen-xmd mx-auto;
 }
 .banner-text {
   @apply text-4xl text-primary-content font-medium max-w-sm;

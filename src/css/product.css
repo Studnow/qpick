@@ -1,5 +1,5 @@
 .product {
-  @apply max-w-[1110px] mx-auto flex flex-col gap-6 mt-8;
+  @apply max-w-screen-xmd mx-auto flex flex-col gap-6 mt-8;
 }
 
 .product-view {

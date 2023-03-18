@@ -39,6 +39,7 @@ body {
 .content {
   flex: 1 1 auto;
   position: relative;
+  @apply mt-12;
 }
 .common-button {
   /* background: rgb(2, 0, 36); */
@@ -46,7 +47,7 @@ body {
   @apply btn btn-accent;
 }
 .cards {
-  @apply relative container mx-auto flex flex-col flex-wrap justify-start items-start gap-6 md:flex-row max-w-[1110px];
+  @apply relative container mx-auto flex flex-col flex-wrap justify-start items-start gap-6 md:flex-row max-w-screen-xmd;
 }
 /* .header, .footer, .ways, .offers, .faq, .clients, .advantages, .about {
   @apply container mx-auto;
@@ -58,5 +59,12 @@ body {
   @apply z-10 w-6 h-6 px-4 stroke-primary stroke-2 hover:text-primary text-neutral absolute;
 }
 .page-title {
-  @apply text-xl text-primary font-semibold w-full max-w-[1110px] mx-auto;
+  @apply text-xl text-primary font-semibold w-full max-w-screen-xmd mx-auto;
+}
+.card-content {
+  @apply bg-neutral rounded-3xl;
+}
+
+.card-text {
+  @apply p-4 text-primary font-medium;
 }
