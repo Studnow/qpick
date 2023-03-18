@@ -1,0 +1,61 @@
+.product {
+  @apply max-w-[1110px] mx-auto flex flex-col gap-6 mt-8;
+}
+
+.product-view {
+  @apply bg-neutral rounded-2xl p-4;
+}
+
+.catalog-title {
+}
+
+.card-view {
+  @apply relative container mx-auto flex flex-col flex-wrap justify-start items-start gap-4 md:flex-row p-4;
+}
+.card-view__title {
+  @apply flex items-center gap-5 text-2xl font-semibold text-primary;
+}
+.view-logo {
+  @apply absolute right-0;
+}
+.prices-wrapper {
+  @apply flex gap-8 items-center px-6;
+}
+.prices-wrapper .prices {
+  @apply flex gap-8 items-center justify-center text-center;
+}
+.prices-wrapper .price {
+  @apply text-xl text-base-content;
+}
+.prices-wrapper .discount {
+  @apply text-2xl;
+}
+.absolute-price {
+  @apply flex flex-col;
+}
+.discount-percent {
+  @apply text-3xl;
+}
+
+.description {
+  @apply flex justify-between gap-8;
+}
+
+.description__title {
+  @apply text-primary font-semibold text-xl py-4 px-6 shadow-md rounded-xl;
+}
+
+.description__wrapper {
+  @apply w-2/3 bg-base-200 rounded-xl;
+}
+.description__list {
+  @apply py-4 px-6 text-primary font-medium;
+}
+
+.description__list-item {
+  @apply py-1;
+}
+
+.description__actions {
+  @apply flex flex-col gap-2 w-1/3;
+}

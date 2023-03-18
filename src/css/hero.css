@@ -17,19 +17,28 @@
   @apply w-full shrink-0 text-xl font-semibold;
 }
 .q-card {
-  @apply card w-64 md:w-80 bg-neutral shadow-xl pt-4;
+  @apply card w-64 md:w-[22rem] bg-neutral shadow-xl hover:shadow-md transition duration-200 pt-4;
+}
+.q-card:hover img {
+  @apply scale-95 transition duration-200;
+}
+.q-card:hover .card-title {
+  @apply scale-95 transition duration-200;
+}
+.q-card__link {
+  @apply hover:shadow-sm;
 }
 .card-info {
   @apply flex justify-between w-full;
 }
 .card-title {
-  @apply w-44 self-start;
+  @apply self-start text-primary;
 }
 .prices {
   @apply flex flex-col items-end justify-end;
 }
 .discount {
-  @apply text-lg font-medium text-secondary;
+  @apply text-xl font-medium text-secondary;
 }
 .price {
   @apply font-medium text-accent line-through;
