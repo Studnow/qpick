@@ -6,9 +6,6 @@
   @apply bg-neutral rounded-2xl p-4;
 }
 
-.catalog-title {
-}
-
 .card-view {
   @apply relative container mx-auto flex flex-col flex-wrap justify-start items-start gap-4 md:flex-row p-4;
 }

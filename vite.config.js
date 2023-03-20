@@ -24,6 +24,7 @@ export default defineConfig({
         "shopping-cart-page": resolve(__dirname, "pages/shopping-cart.html"),
         "conditions-page": resolve(__dirname, "pages/conditions.html"),
         "ordering-page": resolve(__dirname, "pages/ordering.html"),
+        "contacts-page": resolve(__dirname, "pages/contacts.html"),
       },
     },
   },

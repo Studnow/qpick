@@ -1,0 +1,16 @@
+.contacts {
+  @apply flex justify-between;
+}
+.contacts .socials {
+  @apply flex flex-col items-end justify-start text-primary text-xl;
+}
+.contacts .socials-link {
+  @apply p-4 bg-neutral rounded-3xl;
+}
+
+.contacts-map {
+  @apply h-96;
+}
+.phone {
+  @apply flex gap-4 mt-8 text-3xl text-primary font-semibold;
+}

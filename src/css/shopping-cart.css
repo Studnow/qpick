@@ -1,0 +1,80 @@
+.shopping-cart-empty {
+  @apply flex flex-col gap-6 items-center justify-between text-center max-w-screen-xmd w-full h-full mx-auto p-8 rounded-3xl relative bg-neutral shadow-xl;
+}
+.shopping-cart-full {
+  @apply flex flex-col gap-6 max-w-screen-xmd mx-auto shadow-xl;
+}
+.shopping-cart-full__title {
+  @apply w-full justify-start shrink flex-wrap;
+}
+.btn-close {
+  @apply btn btn-xl text-error absolute right-2 top-0;
+}
+.cart-info {
+  @apply flex justify-between gap-4;
+}
+.cart-info__inner {
+  @apply flex flex-col gap-4 w-2/3;
+}
+.cart-product {
+  @apply relative bg-neutral p-4 flex justify-between rounded-3xl;
+}
+.cart-product-view {
+  @apply flex flex-col;
+}
+
+.product-info {
+  @apply flex flex-col justify-center items-start gap-2;
+}
+.product-info .price {
+  @apply text-base-content no-underline;
+}
+
+.product-counter {
+  @apply flex justify-between;
+}
+
+.btn-minus,
+.btn-plus {
+  @apply btn btn-sm btn-accent rounded-full text-lg font-bold;
+}
+.count {
+  @apply text-xl font-semibold;
+}
+
+.total-price {
+  @apply flex flex-col justify-between w-1/4 bg-neutral rounded-3xl h-28 gap-4 shadow-md pt-4;
+}
+.total-price-title {
+  @apply flex justify-between items-center w-full px-4;
+}
+.product-total-price {
+  @apply text-primary font-semibold self-end;
+}
+.btn-ordering {
+  @apply btn btn-primary rounded-3xl;
+}
+
+.cart-shipping {
+  @apply relative bg-neutral p-4 flex flex-col gap-4 justify-between rounded-3xl;
+}
+
+.shipping-map {
+  @apply h-64;
+}
+
+.cart-shipping__info {
+  @apply flex justify-between text-lg text-primary font-semibold;
+}
+
+.shipping-type,
+.shipping-price {
+  @apply flex items-center gap-4;
+}
+
+.open-map {
+  @apply btn;
+}
+
+.shipping-price {
+}

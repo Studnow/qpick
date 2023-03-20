@@ -1,5 +1,5 @@
 .foot {
-  @apply mt-12 px-4;
+  @apply mt-12 px-4 w-full max-w-screen-xmd mx-auto;
 }
 .foot-container {
   @apply p-8 bg-neutral text-primary flex gap-8 rounded-t-3xl shadow-xl w-full max-w-screen-xmd mx-auto;
@@ -17,7 +17,7 @@
   @apply flex gap-4 px-4 items-start;
 }
 .socials-link {
-  @apply hover:text-accent;
+  @apply hover:text-accent flex justify-center items-center;
 }
 .footer-link {
   @apply link link-hover;

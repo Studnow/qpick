@@ -3,6 +3,8 @@
 @import url(./css/header.css);
 @import url(./css/hero.css);
 @import url(./css/product.css);
+@import url(./css/shopping-cart.css);
+@import url(./css/contacts.css);
 /* @import url(./sass/mixins.sass); */
 
 @tailwind base;
@@ -39,7 +41,7 @@ body {
 .content {
   flex: 1 1 auto;
   position: relative;
-  @apply mt-12;
+  @apply mt-12 px-4 w-full max-w-screen-xmd mx-auto;
 }
 .common-button {
   /* background: rgb(2, 0, 36); */
@@ -47,7 +49,7 @@ body {
   @apply btn btn-accent;
 }
 .cards {
-  @apply relative container mx-auto flex flex-col flex-wrap justify-start items-start gap-6 md:flex-row max-w-screen-xmd;
+  @apply relative container mx-auto flex flex-col flex-wrap justify-start items-start gap-10 md:flex-row max-w-screen-xmd;
 }
 /* .header, .footer, .ways, .offers, .faq, .clients, .advantages, .about {
   @apply container mx-auto;
