@@ -1,0 +1,6 @@
+.ordered {
+  @apply flex justify-center;
+}
+.ordered p {
+  @apply text-primary font-medium bg-neutral rounded-3xl p-8;
+}

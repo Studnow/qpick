@@ -1,0 +1,59 @@
+.ordering {
+  @apply rounded-3xl p-8;
+}
+
+.form-ordering {
+  @apply flex gap-8 justify-between;
+}
+
+.form-shipping {
+  @apply flex flex-col max-w-xl gap-4 bg-neutral p-5 rounded-3xl;
+}
+
+.form-title {
+}
+
+.form-price {
+}
+
+.form-map {
+  @apply rounded-3xl h-52;
+}
+
+.shipping-city {
+  @apply select w-full bg-base-300 rounded-2xl;
+}
+.form-address input {
+  @apply bg-base-300 rounded-2xl;
+}
+
+.form-address {
+  @apply flex flex-wrap gap-4;
+}
+.form-order {
+  @apply flex flex-col justify-between items-start;
+}
+
+.ordering-products {
+  @apply w-full p-4 rounded-3xl bg-neutral text-primary font-medium;
+}
+.ordering-products h3 {
+  @apply mb-4;
+}
+.ordering-products p {
+  @apply py-1 flex justify-between;
+}
+
+.ordering-payment {
+  @apply bg-neutral rounded-2xl p-4;
+}
+
+.ordering-promocode {
+  @apply link link-hover flex gap-2 justify-between items-center;
+}
+.form-phone {
+  @apply bg-neutral w-full p-4 rounded-3xl flex flex-col gap-4;
+}
+.btn-ordering {
+  @apply btn btn-primary w-full rounded-xl;
+}

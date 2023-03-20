@@ -5,6 +5,8 @@
 @import url(./css/product.css);
 @import url(./css/shopping-cart.css);
 @import url(./css/contacts.css);
+@import url(./css/ordering.css);
+@import url(./css/ordered.css);
 /* @import url(./sass/mixins.sass); */
 
 @tailwind base;
@@ -49,7 +51,7 @@ body {
   @apply btn btn-accent;
 }
 .cards {
-  @apply relative container mx-auto flex flex-col flex-wrap justify-start items-start gap-10 md:flex-row max-w-screen-xmd;
+  @apply relative container mx-auto flex flex-col flex-wrap justify-center items-center gap-6 md:flex-row;
 }
 /* .header, .footer, .ways, .offers, .faq, .clients, .advantages, .about {
   @apply container mx-auto;
