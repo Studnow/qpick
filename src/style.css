@@ -53,14 +53,11 @@ body {
 .cards {
   @apply relative container mx-auto flex flex-col flex-wrap justify-center items-center gap-6 md:flex-row;
 }
-/* .header, .footer, .ways, .offers, .faq, .clients, .advantages, .about {
-  @apply container mx-auto;
-} */
 .text-mid {
   @apply text-xl sm:text-2xl text-center sm:text-left lg:w-3/4 xl:w-full;
 }
 .btn-favorites {
-  @apply z-10 w-6 h-6 px-4 stroke-primary stroke-2 hover:text-primary text-neutral absolute top-4 left-0;
+  @apply z-10 w-6 h-6 px-4 stroke-primary stroke-2 sm:hover:text-primary text-neutral absolute -top-2 -left-4 sm:top-4 sm:left-0;
 }
 .btn-favorites-checked {
   @apply z-10 w-6 h-6 px-4 stroke-primary stroke-2 text-primary absolute top-4 left-0;

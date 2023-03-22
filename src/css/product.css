@@ -1,54 +1,58 @@
 .product {
   @apply max-w-screen-xmd mx-auto flex flex-col gap-6 mt-8;
 }
-
 .product-view {
   @apply bg-neutral rounded-2xl p-4;
 }
 .card-view {
-  @apply relative container mx-auto flex flex-col flex-wrap justify-start items-start gap-4 md:flex-row p-4;
+  @apply hidden sm:flex relative container mx-auto flex-col flex-wrap justify-start items-start gap-4 sm:flex-row p-4;
 }
 .card-view-info {
   @apply flex justify-between w-full;
 }
 .card-view__title {
-  @apply flex items-center gap-5 text-2xl font-semibold text-primary;
+  @apply flex items-center w-1/2 sm:w-full gap-5 sm:text-2xl font-semibold text-primary;
 }
 .view-logo {
   @apply absolute right-0;
 }
 .prices-wrapper {
-  @apply flex gap-8 items-center px-6;
+  @apply hidden sm:flex sm:gap-8 items-center sm:px-6;
+}
+.mobile-prices-wrapper {
+@apply sm:hidden;
 }
 .prices-wrapper .prices {
-  @apply flex gap-8 items-center justify-center text-center;
+  @apply flex gap-2 items-center justify-center text-center min-w-max;
 }
 .prices-wrapper .price {
-  @apply text-xl text-base-content;
+  @apply sm:text-xl text-base-content;
 }
 .prices-wrapper .discount {
-  @apply text-2xl;
+  @apply sm:text-2xl;
 }
 .absolute-price {
-  @apply flex flex-col;
+  @apply flex gap-2 sm:flex-col items-center;
 }
 .discount-percent {
-  @apply text-3xl;
+  @apply sm:text-3xl;
 }
 
 .description {
-  @apply flex justify-between gap-8;
+  @apply flex flex-col md:flex-row md:justify-between gap-8 items-start;
 }
 
 .description__title {
-  @apply text-primary font-semibold text-xl py-4 px-6 shadow-md rounded-xl;
+  @apply w-full text-primary font-semibold text-xl px-6 shadow-md rounded-xl;
 }
-
+.description__title::after {
+  @apply sm:!hidden;
+}
 .description__wrapper {
-  @apply w-2/3 bg-base-200 rounded-xl;
+  @apply w-full md:w-2/3 bg-neutral rounded-xl items-start;
 }
 .description__list {
-  @apply py-4 px-6 text-primary font-medium;
+  @apply text-primary font-medium bg-base-200;
 }
 
 .description__list-item {
@@ -56,5 +60,20 @@
 }
 
 .description__actions {
-  @apply flex flex-col gap-2 w-1/3;
+  @apply flex flex-row-reverse justify-between md:flex-col gap-2 w-full md:w-1/3 mb-4;
+}
+.gallery-slides {
+  @apply w-full sm:!hidden;
+}
+.gallery {
+  @apply mt-4 sm:!hidden;
+}
+.swiper-pagination-bullet-active {
+  @apply !bg-accent;
+}
+.swiper-slide {
+  @apply border-2 border-neutral py-1;
+}
+.swiper-slide-thumb-active {
+  @apply border-2 border-b-accent border-neutral;
 }

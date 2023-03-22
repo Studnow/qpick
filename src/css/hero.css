@@ -1,14 +1,17 @@
 .qpick-hero {
   @apply mx-auto grid grid-flow-row gap-16;
 }
+.qpick-hero .cards {
+  @apply hidden sm:flex;
+}
 .hero-banner {
-  @apply flex items-center justify-center rounded-3xl bg-primary h-52 w-full max-w-screen-xmd mx-auto;
+  @apply relative flex items-center sm:justify-center rounded-3xl bg-primary h-44 sm:h-52 w-full;
 }
 .banner-text {
-  @apply text-4xl text-primary-content font-medium max-w-sm px-4;
+  @apply sm:text-4xl text-primary-content font-medium px-4;
 }
 .banner-img {
-  @apply relative -top-2;
+  @apply top-0 sm:-top-2 relative w-full overflow-hidden flex justify-end;
 }
 .divide {
   @apply w-full h-1 border-2 border-t-base-content border-dashed mt-8;
@@ -17,16 +20,16 @@
   @apply w-full shrink-0 text-xl font-semibold;
 }
 .q-card {
-  @apply card min-w-[22rem] bg-neutral shadow-xl hover:shadow-md transition duration-200 pt-4;
+  @apply card min-w-fit sm:min-w-[22rem] bg-neutral sm:shadow-xl sm:hover:shadow-md transition duration-200 pt-4;
 }
 .q-card:hover img {
-  @apply scale-95 transition duration-200;
+  @apply sm:scale-95 sm:transition sm:duration-200;
 }
 .q-card:hover .card-title {
-  @apply scale-95 transition duration-200;
+  @apply sm:scale-95 sm:transition sm:duration-200;
 }
 .q-card__link {
-  @apply hover:shadow-sm;
+  @apply sm:hover:shadow-sm;
 }
 .card-info {
   @apply flex justify-between w-full;
@@ -38,7 +41,7 @@
   @apply flex flex-col items-end justify-end;
 }
 .discount {
-  @apply text-xl font-medium text-secondary;
+  @apply self-center sm:text-xl font-medium text-secondary;
 }
 .price {
   @apply font-medium text-accent line-through;

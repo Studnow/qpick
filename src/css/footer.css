@@ -1,5 +1,5 @@
 .foot {
-  @apply mt-12 px-4 w-full max-w-screen-xmd mx-auto;
+  @apply hidden md:block mt-12 px-4 w-full max-w-screen-xmd mx-auto;
 }
 .foot-container {
   @apply p-8 bg-neutral text-primary flex gap-8 rounded-t-3xl shadow-xl w-full max-w-screen-xmd mx-auto;
