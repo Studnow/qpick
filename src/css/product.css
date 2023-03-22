@@ -71,9 +71,9 @@
 .swiper-pagination-bullet-active {
   @apply !bg-accent;
 }
-.swiper-slide {
+.product .swiper-slide {
   @apply border-2 border-neutral py-1;
 }
-.swiper-slide-thumb-active {
+.product .swiper-slide-thumb-active {
   @apply border-2 border-b-accent border-neutral;
 }

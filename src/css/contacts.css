@@ -1,8 +1,8 @@
 .contacts {
-  @apply flex justify-between;
+  @apply flex flex-col md:flex-row gap-4 justify-between;
 }
 .contacts .socials {
-  @apply flex flex-col items-end justify-start text-primary text-xl;
+  @apply flex md:flex-col flex-wrap items-end justify-start text-primary text-xl w-full md:w-1/4;
 }
 .contacts .socials-link {
   @apply p-4 bg-neutral rounded-3xl;

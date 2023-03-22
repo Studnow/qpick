@@ -11,10 +11,10 @@
   @apply btn btn-xl text-error absolute right-2 top-0;
 }
 .cart-info {
-  @apply flex justify-between gap-4;
+  @apply flex flex-col md:flex-row justify-between gap-4;
 }
 .cart-info__inner {
-  @apply flex flex-col gap-4 w-2/3;
+  @apply flex flex-col gap-4 md:w-2/3;
 }
 .cart-product {
   @apply relative bg-neutral p-4 flex justify-between rounded-3xl shadow-md;
@@ -24,7 +24,10 @@
 }
 
 .product-info {
-  @apply flex flex-col justify-center items-start gap-2;
+  @apply flex flex-col justify-center items-start md:gap-2 text-sm;
+}
+.product-info-title {
+  @apply text-sm font-semibold md:card-title;
 }
 .product-info .price {
   @apply text-base-content no-underline;
@@ -43,13 +46,13 @@
 }
 
 .total-price {
-  @apply flex flex-col justify-between w-1/4 bg-neutral rounded-3xl h-28 gap-4 shadow-md pt-4;
+  @apply flex flex-col justify-between md:w-1/4 bg-neutral rounded-3xl h-28 gap-4 shadow-md pt-4;
 }
 .total-price-title {
   @apply flex justify-between items-center w-full px-4;
 }
 .product-total-price {
-  @apply text-primary font-semibold self-end;
+  @apply min-w-fit text-primary font-semibold self-end;
 }
 .btn-ordering {
   @apply btn btn-primary rounded-3xl;
